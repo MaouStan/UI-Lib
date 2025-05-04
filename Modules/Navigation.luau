@@ -1,8 +1,8 @@
 local Navigation = {}
 Navigation.__index = Navigation
 
-local Utility = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/L3nyFromV3rm/Leny-UI/refs/heads/main/Modules/Utility.lua", true))()
-local Popup = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/L3nyFromV3rm/Leny-UI/refs/heads/main/Modules/Popup.lua", true))()
+local Utility = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/Utility.lua", true))()
+local Popup = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/Popup.lua", true))()
 
 function Navigation.new(context: table)
 	local self = setmetatable(context, Navigation)
@@ -41,7 +41,7 @@ function Navigation:selectTab()
 		if self.Page.Visible then
 			return
 		end
-		
+
 		Popup:hidePopups(false, self.Popups)
 		showPage()
 		tweenTabs()
@@ -49,7 +49,7 @@ function Navigation:selectTab()
 end
 
 function Navigation:hoverEffect(boolean)
-	return function()	
+	return function()
 		if self.Page.Visible then
 			return
 		end

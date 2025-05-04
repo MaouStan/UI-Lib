@@ -2,7 +2,7 @@ local Popup = {}
 Popup.__index = Popup
 
 local UserInputService = game:GetService("UserInputService")
-local Utility = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/L3nyFromV3rm/Leny-UI/refs/heads/main/Modules/Utility.lua", true))()
+local Utility = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/Utility.lua", true))()
 
 function Popup.new(context: table)
 	local self = setmetatable(context, Popup)
@@ -59,16 +59,16 @@ function Popup:hidePopupOnClickingOutside()
 
 		if not gameProcessedEvent and (input.UserInputType == Enum.UserInputType.MouseButton1) then
 			local widthPercent = (input.Position.X - self.Popup.AbsolutePosition.X) / self.Popup.AbsoluteSize.X
-			local lengthPercent = (input.Position.Y - self.Popup.AbsolutePosition.Y) / (self.Popup.AbsoluteSize.Y + addDropdownPadding)	
+			local lengthPercent = (input.Position.Y - self.Popup.AbsolutePosition.Y) / (self.Popup.AbsoluteSize.Y + addDropdownPadding)
 
 			if widthPercent < 0 or widthPercent > 1 or lengthPercent < 0 or lengthPercent > 1 then
 				if not self.Library.dragging and not self.Library.sliderDragging and self.Popup.BackgroundTransparency == 0 then
-					self:showPopup(false, 1, 0.2)		
+					self:showPopup(false, 1, 0.2)
 				end
 			end
 		end
 	end)
-	
+
 	local touchEnded = UserInputService.TouchEnded:Connect(function(input, gameProcessedEvent)
 		local addDropdownPadding = 0
 		for _, v in pairs(self.Popup:GetDescendants()) do
@@ -79,16 +79,16 @@ function Popup:hidePopupOnClickingOutside()
 
 		if not gameProcessedEvent then
 			local widthPercent = (input.Position.X - self.Popup.AbsolutePosition.X) / self.Popup.AbsoluteSize.X
-			local lengthPercent = (input.Position.Y - self.Popup.AbsolutePosition.Y) / (self.Popup.AbsoluteSize.Y + addDropdownPadding)	
+			local lengthPercent = (input.Position.Y - self.Popup.AbsolutePosition.Y) / (self.Popup.AbsoluteSize.Y + addDropdownPadding)
 
 			if widthPercent < 0 or widthPercent > 1 or lengthPercent < 0 or lengthPercent > 1 then
 				if not self.Library.dragging and not self.Library.sliderDragging and self.Popup.BackgroundTransparency == 0 then
-					self:showPopup(false, 1, 0.2)		
+					self:showPopup(false, 1, 0.2)
 				end
 			end
 		end
 	end)
-	
+
 	table.insert(self.Library.Connections, touchEnded)
 	table.insert(self.Library.Connections, inputBegan)
 end
@@ -103,7 +103,7 @@ function Popup:togglePopup()
 
 			self:showPopup(true, 0, 0)
 		else
-			self:showPopup(false, 1, 0.2)		
+			self:showPopup(false, 1, 0.2)
 		end
 	end
 end

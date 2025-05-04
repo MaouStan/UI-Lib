@@ -50,18 +50,18 @@ local Exclusions = Library.Exclusions
 
 local Assets = ScreenGui.Assets
 local Modules = {
-	Dropdown = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/Dropdown.lua", true))(),
-	Toggle = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/Toggle.lua", true))(),
-	Popup = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/Popup.lua", true))(),
-	Slider = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/Slider.lua", true))(),
-	Keybind = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/Keybind.lua", true))(),
-	TextBox = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/TextBox.lua", true))(),
-	Navigation = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/Navigation.lua", true))(),
-	ColorPicker = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/ColorPicker.lua", true))(),
+	Dropdown = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/master/Modules/Dropdown.luau", true))(),
+	Toggle = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/master/Modules/Toggle.luau", true))(),
+	Popup = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/master/Modules/Popup.luau", true))(),
+	Slider = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/master/Modules/Slider.luau", true))(),
+	Keybind = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/master/Modules/Keybind.luau", true))(),
+	TextBox = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/master/Modules/TextBox.luau", true))(),
+	Navigation = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/master/Modules/Navigation.luau", true))(),
+	ColorPicker = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/master/Modules/ColorPicker.luau", true))(),
 }
 
-local Utility = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/Utility.lua", true))()
-local Theme = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/main/Modules/Theme.lua", true))()
+local Utility = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/master/Modules/Utility.luau", true))()
+local Theme = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/master/Modules/Theme.luau", true))()
 Library.Theme = Theme
 
 local Popups = ScreenGui.Popups

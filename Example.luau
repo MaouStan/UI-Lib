@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/master/Library.luauu", true))()
+local Library = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MaouStan/UI-Lib/refs/heads/master/Library.luau", true))()
 
 Library.new({
 	sizeX = 770,
